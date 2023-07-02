@@ -29,7 +29,7 @@ export const LoginPage = () => {
           Password
           <input type="password" name="password" />
         </label>
-        <button type="submit">Log In</button>
+        <button type="submit">Sign In</button>
       </form>
     </div>
   );
