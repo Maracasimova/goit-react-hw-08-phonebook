@@ -1,5 +1,6 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
+import { Navigate } from 'react-router-dom';
 import style from './Pages.module.css';
 
 export const LoginPage = () => {
@@ -16,6 +17,12 @@ export const LoginPage = () => {
     );
     form.reset();
   };
+
+  const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+
+  if (isLoggedIn) {
+    return <Navigate to="/contacts" />;
+  }
 
   return (
     <div className={style.div}>
