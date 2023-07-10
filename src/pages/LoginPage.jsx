@@ -26,17 +26,19 @@ export const LoginPage = () => {
 
   return (
     <div className={style.div}>
-      <h1 className={style.h1}>Sign in</h1>
+      <h1 className={style.h1}>Sign In</h1>
       <form className={style.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={style.label}>
           Email
-          <input type="email" name="email" />
+          <input className={style.input} type="email" name="email" />
         </label>
         <label className={style.label}>
           Password
-          <input type="password" name="password" />
+          <input className={style.input} type="password" name="password" />
         </label>
-        <button type="submit">Sign In</button>
+        <button className={style.btn} type="submit">
+          Sign In
+        </button>
       </form>
     </div>
   );
