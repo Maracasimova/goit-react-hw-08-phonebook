@@ -1,10 +1,30 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .username {
-    font-weight: 700;
-    color: #2e7d32;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  color: #2e7d32;
+  border-radius: 5px;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #3d8732;
+  color: #a8e69e;
 }
