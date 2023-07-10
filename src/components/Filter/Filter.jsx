@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { filterContact } from 'redux/filterSlice';
+import style from './Filter.module.css';
 
 export const Filter = () => {
   const dispatch = useDispatch();
@@ -9,8 +10,8 @@ export const Filter = () => {
   };
 
   return (
-    <>
-      <input type="text" onChange={handleFilter} />
-    </>
+    <div className={style.div}>
+      <input className={style.input} type="text" onChange={handleFilter} placeholder='Search...' />
+    </div>
   );
 };
