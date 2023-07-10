@@ -1,8 +1,12 @@
 .div {
   margin-left: 40px;
+  position: relative;
 }
+
 .form {
   width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .label {
@@ -14,13 +18,20 @@
 }
 
 .p {
-  font-size: 12px;
+  font-size: 20px;
   color: #2e7d32;
+  text-align: center;
+}
+
+.pp {
+  margin-top: 40px;
 }
 
 .h1 {
   font-size: 28px;
   color: #2e7d32;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .h2 {
@@ -35,18 +46,54 @@
 }
 
 .title {
-  margin-bottom: 20px;
   font-weight: 500;
   font-size: 35px;
+  color: green;
 }
 
 .text {
-  margin-bottom: 10px;
   font-size: 30px;
   font-weight: 700;
+  color: green;
 }
 
 .info {
   font-size: 20px;
-  color: var(--secondaryTextColor);
+  color: green;
+  margin-top: 40px;
+}
+
+.btn {
+  width: 130px;
+  margin: 0 auto;
+  display: block;
+  height: 40px;
+  color: #2e7d32;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: #bcdeb3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #3d8732;
+  color: #a8e69e;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: green;
+}
+
+.link {
+  color: green;
+  font-weight: 600;
 }
