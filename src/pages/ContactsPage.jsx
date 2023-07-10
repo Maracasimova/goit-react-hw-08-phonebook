@@ -24,7 +24,7 @@ export const ContactsPage = () => {
       <h1 className={style.h1}>Phonebook</h1>
       <ContactForm />
       {isLoading && !error && <ThreeDots />}
-      <h2 className={style.h2}>Contacts</h2>
+      <h2 className={style.h1}>Contacts</h2>
       <p className={style.p}>Find contacts by name</p>
       <Filter />
       <ContactList contacts={contacts} />
