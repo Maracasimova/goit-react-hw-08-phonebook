@@ -15,12 +15,18 @@ export const ContactList = ({ contacts }) => {
     <ul>
       {filteredContacts.map(({ id, name, number }) => {
         return (
-          <li key={id} className={style.li}>
-            {name}: {number}
-            <button type="submit" onClick={() => dispatch(deleteContact(id))}>
+          <div className={style.div}>
+            <li key={id} className={style.li}>
+              {name}: {number}
+            </li>
+            <button
+              className={style.btn}
+              type="submit"
+              onClick={() => dispatch(deleteContact(id))}
+            >
               Delete
             </button>
-          </li>
+          </div>
         );
       })}
     </ul>
