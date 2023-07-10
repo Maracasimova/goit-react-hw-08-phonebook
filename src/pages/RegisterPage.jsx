@@ -26,31 +26,41 @@ export const RegisterPage = () => {
       <form className={style.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={style.label}>
           Your name
-          <input placeholder="First or last name" type="text" name="name" />
+          <input
+            className={style.input}
+            placeholder="First or last name"
+            type="text"
+            name="name"
+          />
         </label>
         <label className={style.label}>
           Email
-          <input type="email" name="email" />
+          <input className={style.input} type="email" name="email" />
         </label>
         <label className={style.label}>
           Password
           <input
+            className={style.input}
             placeholder="At least 6 characters"
             type="password"
             name="password"
           />
         </label>
-        <button type="submit">Sign up</button>
+        <button className={style.btn} type="submit">
+          Sign Up
+        </button>
       </form>
-      <p className={style.p}>
-        By creating an account you agree to Conditions of Use
-      </p>
-      <p className={style.p}>
-        Already have an account?{' '}
-        <NavLink className={style.link} to="/login">
-          Sign in{' '}
-        </NavLink>{' '}
-      </p>
+      <div className={style.pp}>
+        <p className={style.p}>
+          By creating an account you agree to Conditions of Use
+        </p>
+        <p className={style.p}>
+          Already have an account?{' '}
+          <NavLink className={style.link} to="/login">
+            Sign In{' '}
+          </NavLink>{' '}
+        </p>
+      </div>
     </div>
   );
 };
